@@ -6,62 +6,75 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:elevation="0dp"
+        android:background="@color/greyColor"
         android:paddingLeft="@dimen/defaultMarginHorizontal"
-        android:paddingRight="@dimen/defaultMarginHorizontal"
         android:paddingTop="@dimen/defaultMarginVertical"
+        android:paddingRight="@dimen/defaultMarginHorizontal"
         android:paddingBottom="@dimen/defaultMarginVertical"
-        android:background="@color/secondaryColor"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="horizontal"
-           android:showDividers="beginning"
-           >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="beginning">
 
-           <ImageView
-               android:id="@+id/setting_icon_chat"
-               android:layout_width="24dp"
-               android:layout_height="24dp"
-               android:src="@drawable/ic_setting"
-               android:layout_gravity="start"
-               android:layout_weight="0"
-               />
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="@string/chat"
-               android:textColor="@color/main_primary_color"
-               android:textStyle="bold"
-               android:textAlignment="center"
-               android:textSize="@dimen/appBarTitleSize"
-               android:layout_weight="2"
-               />
-           <ImageView
-               android:id="@+id/search_icon_chat"
-               android:layout_width="24dp"
-               android:layout_height="24dp"
-               app:tint="@color/main_primary_color"
-               android:src="@drawable/ic_search"
-               android:layout_weight="0"
-               />
-       </LinearLayout>
+            <ImageView
+                android:id="@+id/setting_icon_chat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:layout_weight="0"
+                android:background="@drawable/user_chat_image_style"
+                android:src="@drawable/ic_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/chat"
+                android:textAlignment="center"
+                android:textColor="@color/main_primary_color"
+                android:textSize="@dimen/appBarTitleSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/search_icon_chat"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_search"
+                app:tint="@color/main_primary_color" />
+        </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_chat_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chat"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

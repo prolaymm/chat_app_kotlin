@@ -4,23 +4,23 @@
     <item
         android:id="@+id/chat_fragment"
         android:icon="@drawable/ic_chat"
-        android:title="First" />
+        android:title="Chat" />
     <item
         android:id="@+id/call_fragment"
-        android:icon="@drawable/ic_chat"
-        android:title="Second" />
+        android:icon="@drawable/ic_phone"
+        android:title="Call" />
     <item
         android:id="@+id/discovery_fragment"
-        android:icon="@drawable/ic_chat"
-        android:title="Third" />
+        android:icon="@drawable/ic_discover"
+        android:title="Discovery" />
     <item
         android:id="@+id/contact_fragment"
-        android:icon="@drawable/ic_chat"
-        android:title="Third" />
+        android:icon="@drawable/ic_contact"
+        android:title="Contacts" />
     <item
         android:id="@+id/me_fragment"
-        android:icon="@drawable/ic_chat"
-        android:title="Third" />
+        android:icon="@drawable/ic_me"
+        android:title="Me" />
 
 
 

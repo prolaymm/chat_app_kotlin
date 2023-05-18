@@ -9,5 +9,9 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="main_primary_color">#07C062</color>
-    <color name="secondaryColor">#EDEDED</color>
+    <color name="secondaryColor">#07C062</color>
+
+    <color name="bodyTextColor">#000</color>
+    <color name="hintTextColor">#C8C8C8</color>
+    <color name="greyColor">#D1D1D1</color>
 </resources>
