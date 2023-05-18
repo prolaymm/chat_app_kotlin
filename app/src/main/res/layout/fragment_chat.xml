@@ -1,13 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:text="Chat"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:elevation="0dp"
+        android:paddingLeft="@dimen/defaultMarginHorizontal"
+        android:paddingRight="@dimen/defaultMarginHorizontal"
+        android:paddingTop="@dimen/defaultMarginVertical"
+        android:paddingBottom="@dimen/defaultMarginVertical"
+        android:background="@color/secondaryColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:showDividers="beginning"
+           >
+
+           <ImageView
+               android:id="@+id/setting_icon_chat"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:src="@drawable/ic_setting"
+               android:layout_gravity="start"
+               android:layout_weight="0"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/chat"
+               android:textColor="@color/main_primary_color"
+               android:textStyle="bold"
+               android:textAlignment="center"
+               android:textSize="@dimen/appBarTitleSize"
+               android:layout_weight="2"
+               />
+           <ImageView
+               android:id="@+id/search_icon_chat"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               app:tint="@color/main_primary_color"
+               android:src="@drawable/ic_search"
+               android:layout_weight="0"
+               />
+       </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
