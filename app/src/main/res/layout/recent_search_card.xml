@@ -27,7 +27,7 @@
           android:paddingLeft="@dimen/defaultPadding"
           android:paddingRight="@dimen/defaultPadding"
           android:text="@string/search"
-          android:textColor="@color/bodyTextColor"
+          android:textColor="@color/norma_text_color"
           android:layout_height="wrap_content"/>
 
       <ImageView

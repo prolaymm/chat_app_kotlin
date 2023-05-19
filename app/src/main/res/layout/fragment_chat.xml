@@ -9,7 +9,7 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/app_bg_light_grey"
+        style="@style/GreyAppBarLayout"
         android:paddingLeft="@dimen/defaultMarginHorizontal"
         android:paddingTop="@dimen/defaultMarginVertical"
         android:paddingRight="@dimen/defaultMarginHorizontal"

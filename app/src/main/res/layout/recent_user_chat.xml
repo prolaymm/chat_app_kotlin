@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     app:cardElevation="0dp"
+    android:background="?attr/cardBackgroundColor"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Hello world"
-                android:textColor="@color/bodyTextColor"
+                android:textColor="@color/norma_text_color"
                 android:textSize="@dimen/largeBodyTextSize"
                 tools:ignore="InvalidId" />
 
