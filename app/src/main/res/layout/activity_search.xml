@@ -10,7 +10,7 @@
         android:id="@+id/appBarLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bg_white"
+        android:background="@android:color/transparent"
         android:elevation="1dp"
         android:paddingLeft="@dimen/defaultMarginHorizontal"
         android:paddingTop="@dimen/defaultMarginVertical"
@@ -37,7 +37,7 @@
                 android:focusableInTouchMode="true"
                 android:maxLines="1"
                 android:padding="@dimen/defaultPadding"
-                android:textSize="@dimen/mediumBodyTextSize" />
+                android:textSize="@dimen/normal_text_size" />
 
             <TextView
                 android:id="@+id/text_search_cancel"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/largeBodyTextSize"
         android:textStyle="bold"
-        android:textColor="@color/bodyTextColor"
+        android:textColor="@color/norma_text_color"
         android:text="@string/recentSearch"
         android:paddingLeft="@dimen/defaultMarginHorizontal"
         android:paddingRight="@dimen/defaultMarginHorizontal"

@@ -1,8 +1,10 @@
 package com.norgianking.chatapp.presentation.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.core.view.MenuProvider
@@ -14,6 +16,7 @@ import com.norgianking.chatapp.Adapter.RecentUserChatRecyclerAdapter
 import com.norgianking.chatapp.Adapter.view_holder.UserRecentChatViewHolder
 import com.norgianking.chatapp.R
 import com.norgianking.chatapp.data.vos.ChatUserVo
+import com.norgianking.chatapp.presentation.activity.SearchActivity
 import javax.inject.Inject
 
 class FragmentChat : Fragment() {
@@ -22,6 +25,7 @@ class FragmentChat : Fragment() {
     lateinit var toolbar: Toolbar
     lateinit var floatingActionButton: FloatingActionButton
     lateinit var  userChatRecyclerView : RecyclerView
+    lateinit var searchImageView: ImageView
 
     lateinit var recyclerAdapter: RecentUserChatRecyclerAdapter
     override fun onCreateView(
@@ -38,6 +42,7 @@ class FragmentChat : Fragment() {
 
         floatingActionButton = view.findViewById(R.id.chat_floating_action_button)
         userChatRecyclerView = view.findViewById(R.id.user_chat_recycler_view)
+        searchImageView = view.findViewById(R.id.search_icon_chat)
         recyclerAdapter  = RecentUserChatRecyclerAdapter()
         userChatRecyclerView.layoutManager = LinearLayoutManager(view.context)
         userChatRecyclerView.adapter = recyclerAdapter
@@ -52,6 +57,12 @@ class FragmentChat : Fragment() {
         arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
         recyclerAdapter.setUsers(arrayList)
 
+        searchImageView.setOnClickListener{
+
+            val intent : Intent = Intent(view.context,SearchActivity::class.java)
+
+            startActivity(intent)
+        }
 
         floatingActionButton.setOnClickListener{
             Toast.makeText(view.context,"Hello world",Toast.LENGTH_SHORT).show()

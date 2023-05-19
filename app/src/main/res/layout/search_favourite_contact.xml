@@ -14,7 +14,7 @@
         android:id="@+id/text_favorite"
         android:textSize="@dimen/largeBodyTextSize"
         android:textStyle="bold"
-        android:textColor="@color/bodyTextColor"
+        android:textColor="@color/norma_text_color"
         android:text="@string/search"
         />
 

@@ -25,7 +25,7 @@
             android:id="@+id/text_view_search_fav_user_name"
             android:layout_width="wrap_content"
             android:text="@string/search"
-            android:textColor="@color/black"
+            android:textColor="@color/norma_text_color"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 

@@ -2,6 +2,7 @@ package com.norgianking.chatapp.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.norgianking.chatapp.R
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var  navigationView: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        delegate.applyDayNight()
         setContentView(R.layout.activity_main)
 
         navigationView = findViewById(R.id.mainBottomNavigationView)
