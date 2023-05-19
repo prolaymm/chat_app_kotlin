@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:elevation="0dp"
+    app:cardElevation="0dp"
+    android:layout_marginBottom="@dimen/defaultMarginVertical"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/image_view_recent_search_profile"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:src="@drawable/outline_add_24"
+          android:background="@drawable/user_chat_image_style"
+          android:clipToOutline="true"
+          android:scaleType="centerCrop"
+          android:adjustViewBounds="true" />
+      <TextView
+          android:id="@+id/text_view_recent_search_user_name"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:paddingLeft="@dimen/defaultPadding"
+          android:paddingRight="@dimen/defaultPadding"
+          android:text="@string/search"
+          android:textColor="@color/bodyTextColor"
+          android:layout_height="wrap_content"/>
+
+      <ImageView
+          android:id="@+id/image_view_recent_search_delete"
+          android:layout_width="24dp"
+          android:src="@drawable/ic_close"
+          android:layout_height="24dp"
+          app:tint="@color/hintTextColor" />
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>
