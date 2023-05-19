@@ -4,6 +4,7 @@
     android:paddingLeft="@dimen/defaultMarginHorizontal"
     android:paddingTop="@dimen/defaultMarginVertical"
     android:paddingRight="@dimen/defaultMarginHorizontal"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/defaultMarginVertical"
     android:layout_height="100dp">
 
@@ -17,11 +18,11 @@
         android:text="@string/search"
         />
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recycler_view_search_favourite"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="120dp"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:layout_below="@+id/text_favorite"-->
-<!--        android:layout_marginTop="1dp" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search_favourite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text_favorite"
+        android:layout_marginTop="1dp" />
 </LinearLayout>
