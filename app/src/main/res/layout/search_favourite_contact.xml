@@ -21,6 +21,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_search_favourite"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/text_favorite"
