@@ -13,5 +13,6 @@
 
     <color name="bodyTextColor">#000</color>
     <color name="hintTextColor">#C8C8C8</color>
-    <color name="greyColor">#D1D1D1</color>
+    <color name="app_bg_light_grey">#EDEDED</color>
+    <color name="bg_white">#FFFFFFFF</color>
 </resources>

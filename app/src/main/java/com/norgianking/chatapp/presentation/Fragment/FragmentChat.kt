@@ -1,4 +1,4 @@
-package com.norgianking.chatapp.activity
+package com.norgianking.chatapp.presentation.Fragment
 
 import android.os.Bundle
 import android.view.*

@@ -1,10 +1,13 @@
-package com.norgianking.chatapp.activity
+package com.norgianking.chatapp.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.norgianking.chatapp.R
+import com.norgianking.chatapp.presentation.Fragment.FragmentChat
+import com.norgianking.chatapp.presentation.Fragment.FragmentContact
+import com.norgianking.chatapp.presentation.Fragment.FragmentMe
 import dagger.hilt.android.AndroidEntryPoint
 
 
