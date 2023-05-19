@@ -55,8 +55,8 @@
                 android:text="Hello wdadadjadja dajddjk dkakd kadkakdk adkkadka dad kk kdk dkkdk ddadorld"
                 android:maxLines="1"
                 android:ellipsize="end"
-                android:textColor="@color/hintTextColor"
-                android:textSize="@dimen/hintTextSize"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/hint_text_size"
                 tools:ignore="InvalidId" />
         </LinearLayout>
 

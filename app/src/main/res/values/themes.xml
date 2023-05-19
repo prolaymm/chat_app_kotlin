@@ -24,6 +24,11 @@
         <item name="android:textColor">@color/norma_text_color</item>
         <item name="android:textStyle">normal</item>
     </style>
+    <style name="HintTextStyle">
+        <item name="android:textSize">@dimen/hint_text_size</item>
+        <item name="android:textColor">@color/hint_text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
     <style name="LargeTextStyle">
         <item name="android:textSize">@dimen/largeBodyTextSize</item>
         <item name="android:textColor">@color/norma_text_color</item>
