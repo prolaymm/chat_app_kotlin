@@ -6,11 +6,13 @@
     <dimen name="defaultMarginHorizontal">12dp</dimen>
     <dimen name="defaultMarginVertical">16dp</dimen>
 
-
+ <!-- padding -->
+    <dimen name="defaultPadding">8dp</dimen>
 <!--    font size -->
 
     <dimen name="appBarTitleSize">20sp</dimen>
     <dimen name="largeBodyTextSize">18sp</dimen>
+    <dimen name="mediumBodyTextSize">16sp</dimen>
     <dimen name="hintTextSize">14sp</dimen>
 
 </resources>
