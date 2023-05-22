@@ -1,4 +1,4 @@
-package com.norgianking.chatapp.Adapter.view_holder
+package com.norgianking.chatapp.adapter.view_holder
 
 import android.view.View
 import android.widget.ImageView

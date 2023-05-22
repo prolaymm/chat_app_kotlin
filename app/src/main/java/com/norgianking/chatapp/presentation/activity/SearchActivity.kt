@@ -5,24 +5,25 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.norgianking.chatapp.Adapter.FavouriteContactInSearchRecyclerAdapter
-import com.norgianking.chatapp.Adapter.RecentUserChatRecyclerAdapter
-import com.norgianking.chatapp.Adapter.RecentUserSearchRecyclerAdapter
+import com.norgianking.chatapp.adapter.FavouriteContactInSearchRecyclerAdapter
+import com.norgianking.chatapp.adapter.RecentUserChatRecyclerAdapter
+import com.norgianking.chatapp.adapter.RecentUserSearchRecyclerAdapter
 import com.norgianking.chatapp.R
 import com.norgianking.chatapp.data.vos.ChatUserVo
+import com.norgianking.chatapp.utils.mUserList
 
 class SearchActivity : AppCompatActivity() {
 
     private lateinit var  userChatRecyclerView : RecyclerView
     lateinit var  favouriteContactRecyclerView : RecyclerView
-
+    lateinit var favouriteContactInSearchRecyclerAdapter: FavouriteContactInSearchRecyclerAdapter
    private lateinit var recyclerAdapter:  RecentUserSearchRecyclerAdapter
-   lateinit var favouriteContactInSearchRecyclerAdapter: FavouriteContactInSearchRecyclerAdapter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        delegate.applyDayNight()
+    //    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+    //    delegate.applyDayNight()
         setContentView(R.layout.activity_search)
 
 
@@ -38,15 +39,7 @@ class SearchActivity : AppCompatActivity() {
         userChatRecyclerView.adapter = recyclerAdapter
         favouriteContactRecyclerView.adapter = favouriteContactInSearchRecyclerAdapter
 
-        var arrayList = ArrayList<ChatUserVo>()
-
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        recyclerAdapter.setUsers(arrayList)
-        favouriteContactInSearchRecyclerAdapter.setUsers(arrayList)
+        recyclerAdapter.setUsers(mUserList)
+        favouriteContactInSearchRecyclerAdapter.setUsers(mUserList)
     }
 }
