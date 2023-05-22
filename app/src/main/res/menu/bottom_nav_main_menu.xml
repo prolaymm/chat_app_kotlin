@@ -5,10 +5,10 @@
         android:id="@+id/chat_fragment"
         android:icon="@drawable/ic_chat"
         android:title="Chat" />
-    <item
+<!--    <item
         android:id="@+id/call_fragment"
         android:icon="@drawable/ic_phone"
-        android:title="Call" />
+        android:title="Call" />-->
     <item
         android:id="@+id/discovery_fragment"
         android:icon="@drawable/ic_discover"

@@ -6,9 +6,10 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.norgianking.chatapp.R
-import com.norgianking.chatapp.presentation.Fragment.FragmentChat
-import com.norgianking.chatapp.presentation.Fragment.FragmentContact
-import com.norgianking.chatapp.presentation.Fragment.FragmentMe
+import com.norgianking.chatapp.presentation.fragment.FragmentChat
+import com.norgianking.chatapp.presentation.fragment.FragmentContact
+import com.norgianking.chatapp.presentation.fragment.FragmentDiscovery
+import com.norgianking.chatapp.presentation.fragment.FragmentMe
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -40,12 +41,12 @@ class MainActivity : AppCompatActivity() {
             loadFragment(FragmentChat())
             true
         }
-        R.id.call_fragment -> {
+      /*  R.id.call_fragment -> {
             loadFragment(FragmentChat())
             true
-        }
+        }*/
         R.id.discovery_fragment -> {
-            loadFragment(FragmentChat())
+            loadFragment(FragmentDiscovery())
             true
         }
         R.id.contact_fragment -> {

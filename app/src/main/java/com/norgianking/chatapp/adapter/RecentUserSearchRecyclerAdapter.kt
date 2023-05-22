@@ -1,11 +1,11 @@
-package com.norgianking.chatapp.Adapter
+package com.norgianking.chatapp.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.norgianking.chatapp.Adapter.view_holder.RecentUserSearchViewHolder
+import com.norgianking.chatapp.adapter.view_holder.RecentUserSearchViewHolder
 import com.norgianking.chatapp.R
 import com.norgianking.chatapp.data.vos.ChatUserVo
 

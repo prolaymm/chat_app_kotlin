@@ -11,16 +11,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/text_favorite"
+        android:id="@+id/text_view_contact"
         android:textSize="@dimen/largeBodyTextSize"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:textColor="@color/norma_text_color"
-        android:text="@string/favouriteContact"
+        android:text="@string/contact"
         />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_search_favourite"
+        android:id="@+id/recycler_view_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

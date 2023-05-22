@@ -1,23 +1,19 @@
-package com.norgianking.chatapp.presentation.Fragment
+package com.norgianking.chatapp.presentation.fragment
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import android.widget.Toolbar
-import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.norgianking.chatapp.Adapter.RecentUserChatRecyclerAdapter
-import com.norgianking.chatapp.Adapter.view_holder.UserRecentChatViewHolder
+import com.norgianking.chatapp.adapter.RecentUserChatRecyclerAdapter
 import com.norgianking.chatapp.R
-import com.norgianking.chatapp.data.vos.ChatUserVo
 import com.norgianking.chatapp.presentation.activity.SearchActivity
-import javax.inject.Inject
+import com.norgianking.chatapp.utils.mUserList
 
 class FragmentChat : Fragment() {
 
@@ -47,15 +43,7 @@ class FragmentChat : Fragment() {
         userChatRecyclerView.layoutManager = LinearLayoutManager(view.context)
         userChatRecyclerView.adapter = recyclerAdapter
 
-        var arrayList = ArrayList<ChatUserVo>()
-
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        arrayList.add(ChatUserVo("hello world","https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg"))
-        recyclerAdapter.setUsers(arrayList)
+        recyclerAdapter.setUsers(mUserList)
 
         searchImageView.setOnClickListener{
 
