@@ -16,6 +16,13 @@
         android:theme="@style/Theme.ChatApp"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.activity.MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".presentation.activity.SearchActivity"
             android:exported="false">
             <meta-data
@@ -23,7 +30,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".presentation.activity.MainActivity"
+            android:name=".presentation.activity.ChatMessageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
