@@ -10,5 +10,5 @@ class SingleUserAllMessageViewHolder(itemView: View) : RecyclerView.ViewHolder(i
 
 
     val senderMessageTextView : TextView = itemView.findViewById(R.id.text_view_sender_message)
-    val receiverTextView: TextView = itemView.findViewById(R.id.text_view_receiver_message)
+//    val receiverTextView: TextView = itemView.findViewById(R.id.text_view_receiver_message)
 }
