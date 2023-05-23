@@ -9,4 +9,6 @@
     <string name="favouriteContact">Favourite Contact</string>
     <string name="contact">Contacts</string>
     <string name="discover">Discover</string>
+    <string name="message">Message</string>
+    <string name="date">Date</string>
 </resources>

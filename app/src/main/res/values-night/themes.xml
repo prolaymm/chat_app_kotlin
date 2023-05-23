@@ -17,7 +17,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="WhiteAppBarTitle">
+    <style name="PrimaryAppBarTitle">
     <item name="android:textSize">@dimen/appBarTitleSize</item>
     <item name="android:textColor">@color/main_primary_color</item>
     <item name="android:textStyle">bold</item>

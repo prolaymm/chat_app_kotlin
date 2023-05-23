@@ -21,7 +21,7 @@
 
               <TextView
                   android:id="@+id/text_view_contact_app_bar_title"
-                  style="@style/WhiteAppBarTitle"
+                  style="@style/PrimaryAppBarTitle"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
