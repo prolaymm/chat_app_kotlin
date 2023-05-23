@@ -29,9 +29,9 @@ class SingleUserChatMessageRecyclerAdapter : RecyclerView.Adapter<SingleUserAllM
 
     override fun onBindViewHolder(holder: SingleUserAllMessageViewHolder, position: Int) {
 
-        val vo : AllMessage = mMessageList[position]
+      //  val vo : AllMessage = mMessageList[position]
 
-        currentMessage = vo
+     //   currentMessage = vo
 
     }
 
